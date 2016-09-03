@@ -6,6 +6,7 @@
  *           输出：[1,2,3,4,5,6]
  * @author GongchuangSu
  * @since 2016.05.10
+ * @解题思路 本方法采用头插法，也可采用更简便的尾插法
  */
 //public class ListNode {
 //    int val;
