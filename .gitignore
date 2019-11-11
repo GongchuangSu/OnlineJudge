@@ -1,5 +1,9 @@
 .idea
 .vscode
+.DS_Store
 LeetCode/.idea
 LeetCode/target
 LeetCode/.DS_Store
+LeetCode/.classpath
+LeetCode/.project
+LeetCode/.settings/
