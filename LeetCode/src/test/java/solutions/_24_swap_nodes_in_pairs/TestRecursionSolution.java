@@ -6,7 +6,7 @@ import org.junit.Test;
  * @author sugongchuang
  * @date 2019.11.12
  */
-public class TestSolutionRecursion {
+public class TestRecursionSolution {
 
     @Test
     public void test(){
@@ -16,7 +16,7 @@ public class TestSolutionRecursion {
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
 
-        SolutionRecursion solution = new SolutionRecursion();
+        RecursionSolution solution = new RecursionSolution();
         ListNode result = solution.swapPairs(head);
         System.out.print(result.val + "->");
         while (result.next != null){

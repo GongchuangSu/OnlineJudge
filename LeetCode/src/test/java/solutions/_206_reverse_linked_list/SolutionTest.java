@@ -8,7 +8,7 @@ import java.util.List;
  * @author sugongchuang
  * @date 2019.11.11
  */
-public class TestSolution {
+public class SolutionTest {
 
     @Test
     public void test(){
