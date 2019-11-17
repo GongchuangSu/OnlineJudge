@@ -11,11 +11,12 @@ public class CommonSolutionTest {
     @Test
     public void test(){
 //        String s = "()";
-//        String s = "()[]{}";
+        String s = "()[]{}";
 //        String s = "(]";
-        String s = "([)]";
+//        String s = "([)]";
 //        String s = "{[]}";
-        CommonSolution solution = new CommonSolution();
+//        CommonSolution solution = new CommonSolution();
+        BetterSolution solution = new BetterSolution();
         System.out.print(solution.isValid(s));
     }
 }
