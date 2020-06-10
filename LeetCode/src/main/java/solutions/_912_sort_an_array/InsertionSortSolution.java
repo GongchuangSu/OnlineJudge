@@ -1,7 +1,7 @@
 package solutions._912_sort_an_array;
 
 /**
- * 选择排序法
+ * 插入排序法
  * @Description
  *      Given an array of integers nums, sort the array in ascending order.
  * @Example
@@ -16,29 +16,30 @@ package solutions._912_sort_an_array;
  * @author GongchuangSu
  * @date 2020.06.10
  */
-public class SelectionSortSolution {
+public class InsertionSortSolution {
 	
 	public int[] sortArray(int[] nums) {
-		selectionSort(nums, nums.length);
+		insertionSort(nums, nums.length);
 		return nums;
 	}
 	
-	private void selectionSort(int[] nums, int n){
+	private void insertionSort(int[] nums, int n){
 		if(n <= 1){
 			return;
 		}
-		for(int i = 0; i < n - 1; i++){
-			// 查找最小值，并记录下标
-			int minIndex = i;
-			for(int j = i + 1; j < n; j++){
-				if(nums[j] < nums[minIndex]){
-					minIndex = j;
+		for(int i = 1; i < n; i++){
+			// 每次要比较的元素
+			int value = nums[i];
+			// 查找要插入的位置并移动数据
+			int j = i - 1;
+			for(; j >= 0; j--){
+				if(nums[j] > value){
+					nums[j+1] = nums[j];
+				}else{
+					break;
 				}
 			}
-			// 交换元素
-			int tmp = nums[i];
-			nums[i] = nums[minIndex];
-			nums[minIndex] = tmp;
+			nums[j + 1] = value;
 		}
 	}
 }
@@ -46,5 +47,5 @@ public class SelectionSortSolution {
 /** Complexity analysis
  * Time complexity : O(n*n).
  * Space complexity:O(1).
- * 选择排序是一种原地并不稳定的排序算法
+ * 插入排序是一种原地并稳定的排序算法
  */
