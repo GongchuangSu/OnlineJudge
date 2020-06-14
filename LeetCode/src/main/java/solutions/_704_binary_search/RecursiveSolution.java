@@ -1,7 +1,7 @@
 package solutions._704_binary_search;
 
 /**
- * 二分查找（迭代法）
+ * 二分查找（递归法）
  * @Description
  *      Given a sorted (in ascending order) integer array nums of n elements and a target value, write a function to search target in nums.
  *      If target exists, then return its index, otherwise return -1.
@@ -19,27 +19,26 @@ package solutions._704_binary_search;
  * @author GongchuangSu
  * @date 2020.06.14
  */
-public class IterativeSolution {
+public class RecursiveSolution {
 	
 	public int search(int[] nums, int target) {
-		if(nums.length < 1){
+		return binarySearch(nums, 0, nums.length - 1, target);
+	}
+	
+	private int binarySearch(int[] nums, int low, int high, int target){
+		if(low > high){
 			return -1;
 		}
-		int low = 0;
-		int high = nums.length - 1;
-		while (low <= high){
 //			int mid = (low + high)/2;
 //			int mid = low + (high - low)/2;
-			int mid = low + ((high-low) >> 1);
-			if(nums[mid] == target){
-				return mid;
-			}else if(nums[mid] < target){
-				low = mid + 1;
-			}else {
-				high = mid - 1;
-			}
+		int mid = low + ((high-low) >> 1);
+		if(nums[mid] == target){
+			return mid;
+		}else if(nums[mid] < target){
+			return binarySearch(nums, mid + 1, high, target);
+		}else{
+			return binarySearch(nums, low, mid - 1, target);
 		}
-		return -1;
 	}
 	
 }
