@@ -27,6 +27,7 @@ import java.util.Queue;
  *      You may assume k is always valid, 1 ≤ k ≤ input array's size for non-empty array.
  * @author GongchuangSu
  * @date 2019.11.19
+ * @tags 大顶堆、maxHeap
  */
 public class MaxHeapSolution {
 
@@ -36,12 +37,7 @@ public class MaxHeapSolution {
 	    if(nums.length == 0) {
 	    	return new int[0];
 	    }
-	    Queue<Integer> queue = new PriorityQueue<Integer>(new Comparator<Integer>(){
-		    @Override
-		    public int compare(Integer i1, Integer i2){
-			    return Integer.compare(i2, i1);
-		    }
-	    });
+	    Queue<Integer> queue = new PriorityQueue<>((i1, i2) -> Integer.compare(i2, i1));
 	
 	    for(int i = 0; i < k; i ++){
 		    queue.add(nums[i]);
