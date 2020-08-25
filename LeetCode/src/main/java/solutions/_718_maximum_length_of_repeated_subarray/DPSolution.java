@@ -11,6 +11,10 @@ package solutions._718_maximum_length_of_repeated_subarray;
  *      Output: 3
  *      Explanation:
  *      The repeated subarray with maximum length is [3, 2, 1].
+ *
+ *      Since a common subarray of A and B must start at some A[i] and B[j],
+ *      let dp[i][j] be the longest common prefix of A[i:] and B[j:].
+ *      Whenever A[i] == B[j], we know dp[i][j] = dp[i+1][j+1] + 1. Also, the answer is max(dp[i][j]) over all i, j.
  * @author GongchuangSu
  * @date 2020.08.25
  */
