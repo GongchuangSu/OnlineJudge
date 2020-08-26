@@ -1,6 +1,7 @@
 package solutions._206_reverse_linked_list;
 
 /**
+ * 迭代法反转列表
  * @Description
  *      Reverse a singly linked list
  * @Example
@@ -9,7 +10,7 @@ package solutions._206_reverse_linked_list;
  * @author sugongchuang
  * @date 2019.11.11
  */
-public class Solution {
+public class IterativeSolution {
 
     public ListNode reverseList(ListNode head) {
         ListNode cur = head;
@@ -34,13 +35,3 @@ public class Solution {
  * Space complexity:O(1).
  */
 
-/**
- * 节点定义
- */
-class ListNode{
-    int val;
-    ListNode next;
-    ListNode(int x){
-        val = x;
-    }
-}

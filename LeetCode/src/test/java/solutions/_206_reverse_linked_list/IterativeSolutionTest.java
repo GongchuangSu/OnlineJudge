@@ -2,13 +2,11 @@ package solutions._206_reverse_linked_list;
 
 import org.junit.Test;
 
-import java.util.List;
-
 /**
  * @author sugongchuang
  * @date 2019.11.11
  */
-public class SolutionTest {
+public class IterativeSolutionTest {
 
     @Test
     public void test(){
@@ -18,8 +16,8 @@ public class SolutionTest {
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
 
-        Solution solution = new Solution();
-        ListNode result = solution.reverseList(head);
+        IterativeSolution iterativeSolution = new IterativeSolution();
+        ListNode result = iterativeSolution.reverseList(head);
         System.out.print(result.val + "->");
         while (result.next != null){
             System.out.print(result.next.val + "->");
