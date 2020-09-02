@@ -3,7 +3,7 @@ package solutions._141_linked_list_cycle;
 import org.junit.Test;
 
 /**
- * @author sugongchuang
+ * @author GongchuangSu
  * @date 2019.11.13
  */
 public class CommonSolutionTest {

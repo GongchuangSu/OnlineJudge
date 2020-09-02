@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.Arrays;
 
 /**
- * @author sugongchuang
+ * @author GongchuangSu
  * @date 2019.11.10
  */
 public class TestSolution2 {

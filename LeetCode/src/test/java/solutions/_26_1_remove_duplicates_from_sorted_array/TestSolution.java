@@ -3,7 +3,7 @@ package solutions._26_1_remove_duplicates_from_sorted_array;
 import org.junit.Test;
 
 /**
- * @author sugongchuang
+ * @author GongchuangSu
  * @date 2019.11.10
  */
 public class TestSolution {

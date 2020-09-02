@@ -2,7 +2,7 @@ package bean;
 
 /**
  * 节点定义
- * @author sugongchuang
+ * @author GongchuangSu
  * @date 2019.11.13
  */
 public class ListNode {

@@ -2,7 +2,7 @@ package solutions._141_linked_list_cycle;
 
 /**
  * 节点定义
- * @author sugongchuang
+ * @author GongchuangSu
  * @date 2019.11.13
  */
 public class ListNode {

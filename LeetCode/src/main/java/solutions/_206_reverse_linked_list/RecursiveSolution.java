@@ -7,7 +7,7 @@ package solutions._206_reverse_linked_list;
  * @Example
  *      Input: 1->2->3->4->5->NULL
  *      Output: 5->4->3->2->1->NULL
- * @author sugongchuang
+ * @author GongchuangSu
  * @see <a href="https://leetcode.com/problems/reverse-linked-list/solution">递归求解思路</a>
  * @date 2020.08.26
  */

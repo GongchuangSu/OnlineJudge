@@ -3,7 +3,7 @@ package solutions._24_swap_nodes_in_pairs;
 import org.junit.Test;
 
 /**
- * @author sugongchuang
+ * @author GongchuangSu
  * @date 2019.11.11
  */
 public class TestSolution {

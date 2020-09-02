@@ -7,7 +7,7 @@ package solutions._206_reverse_linked_list;
  * @Example
  *      Input: 1->2->3->4->5->NULL
  *      Output: 5->4->3->2->1->NULL
- * @author sugongchuang
+ * @author GongchuangSu
  * @date 2019.11.11
  */
 public class IterativeSolution {

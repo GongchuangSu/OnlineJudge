@@ -3,7 +3,7 @@ package solutions._206_reverse_linked_list;
 import org.junit.Test;
 
 /**
- * @author sugongchuang
+ * @author GongchuangSu
  * @date 2019.11.11
  */
 public class IterativeSolutionTest {

@@ -15,7 +15,7 @@ import java.util.Scanner;
  *      hello world
  *  输出:
  *      5
- * @author sugongchuang
+ * @author GongchuangSu
  * @date 2020.09.02
  */
 public class Main {

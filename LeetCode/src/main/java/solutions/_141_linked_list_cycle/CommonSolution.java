@@ -21,7 +21,7 @@ import java.util.Set;
  *      3. Input: head = [1], pos = -1
  *         Output: false
  *         Explanation: There is no cycle in the linked list.
- * @author sugongchuang
+ * @author GongchuangSu
  * @date 2019.11.13
  */
 public class CommonSolution {
