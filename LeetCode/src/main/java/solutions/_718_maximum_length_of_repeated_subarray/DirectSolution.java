@@ -17,25 +17,25 @@ package solutions._718_maximum_length_of_repeated_subarray;
 public class DirectSolution {
 	
 	public int findLength(int[] A, int[] B) {
-		if(A == null||B == null) {return 0;}
-		int m = A.length;
-		int n = B.length;
-		int count = 0;
-		for(int i = 0; i < m; i++){
-			int p = i;
-			int q = 0;
-			while(p < m && q < n){
-				int temp = 0;
-				while(p < m && q < n && A[p] == B[q]){
-					p++;
-					q++;
-					temp++;
+		if(A == null || B == null){
+			return 0;
+		}
+		int max = 0;
+		int count;
+		for(int i = 0; i < A.length; i++){
+			for(int j = 0; j < B.length; j++){
+				count = 0;
+				int n = j;
+				int m = i;
+				while(m < A.length && n < B.length && A[m] == B[n]){
+					m++;
+					n++;
+					count++;
 				}
-				count = count > temp ? count : temp;
-				q++;
+				max = count > max ? count : max;
 			}
 		}
-		return count;
+		return max;
 	}
 }
 
