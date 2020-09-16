@@ -1,7 +1,7 @@
 package solutions._206_reverse_linked_list;
 
 /**
- * 递归法反转列表
+ * 递归法反转链表
  * @Description
  *      Reverse a singly linked list
  * @Example
